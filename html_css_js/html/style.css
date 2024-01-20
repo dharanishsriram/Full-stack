@@ -1,0 +1,32 @@
+img{
+    border-radius: 50%;
+}
+.left
+{
+    float:left;
+    width: 35%;
+    height: 20cm;
+    background-color: black;
+
+}
+.right
+{
+    float: right;
+    width: 63%;
+    height: 20cm;
+    background-color: beige;
+}
+.left h2,p{
+    color: white;
+    
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    background: #b0eef8;
+}
+.item
+{
+
+}
