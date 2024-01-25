@@ -1,0 +1,41 @@
+1.function greetingAfterSometime(name,callback)
+{
+    setTimeout(function(){
+        console.log("hello" +name+" ");
+        callback();},5000);}
+        
+undefined
+function bye()
+{
+    console.log("bye");
+}
+undefined
+greetingAfterSometime("dharani",bye)
+undefined
+
+
+output:(after 5 seconds)
+VM349:4 hellodharani 
+VM448:3 bye
+
+
+2.
+function isauthor(){
+return Math.random()>0.5;
+}
+function checkauthor(){
+return new Promise(function(resolve,reject){
+setTimeout(function(){
+if(isauthor()){
+resolve("authorised");
+}
+else{
+reject("unauthorised");
+}},1000);});
+}
+checkauthor().then(function(message){
+console.log(message);}).catch(function(error){
+console.error(error);});
+ 
+
+op:authorised
